@@ -8,7 +8,7 @@ port = getenv("PORT", 8056)
 host = getenv("HOST", "0.0.0.0")
 
 root = Path(__file__).resolve().parent.parent
-dirData = root / "data"
+fileLayout = root / "src" / "layout.json"
 dirAssets = root / "src" / "assets"
 
 
@@ -18,11 +18,6 @@ app = Dash(
     title = "Project Fenaverat",
     assets_folder = "src/assets",
     suppress_callback_exceptions = True,
-    external_stylesheets = [
-
-        # themes.GRID,
-        themes.BOOTSTRAP
-
-    ]
+    external_stylesheets = [themes.BOOTSTRAP]
 
 )
