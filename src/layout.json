@@ -8,7 +8,7 @@
     "row": 1,
     "col": 2,
     "text": [
-      "# Welcome to Fenaverat",
+      "## Welcome to Fenaverat 2.3",
       "Dynamic grid-driven Dash layout",
       "Built from JSON structure *and here* is some bold **text**",
       "and I think that something *like* **this** is very important as a developer",

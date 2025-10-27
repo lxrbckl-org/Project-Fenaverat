@@ -26,14 +26,13 @@ html, body {
 
 
 .gridItem {
-    padding: 0;
     display: flex;
     font-size: 30px;
     overflow: hidden;
     text-align: justify;
-
+    padding: 0 5px 0 5px;
     font-weight: bold;
-    align-items: center;
+    align-items: center-top;
     box-sizing: border-box;
     background-size: cover;
     justify-content: center;
@@ -44,7 +43,6 @@ html, body {
 
 
 .markdownExtended {
-    padding: 5px;
     font-size: 15px;
     color: var(--colorWhite);
 }
@@ -62,6 +60,9 @@ html, body {
 }
 .markdownExtended a {
 
+}
+.markdownExtended br {
+    
 }
 .markdownExtended em {
     
