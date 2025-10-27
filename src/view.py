@@ -6,18 +6,19 @@ import dash_bootstrap_components as dbc
 class View:
 
 
-    def __init__(self):
+    def __init__(self, items):
         """  """
 
-        pass
+        self.items = items
 
 
     def _buildItem(
             
+            self,
             row = 1, 
             col = 1,
+            text = [],
             style = {},
-            text = None,
             visible = True,
             background = None
 
@@ -29,19 +30,17 @@ class View:
             className = "gridItem",
             children = dcc.Markdown(
 
-                children = text,
-                className = "markdownCustom"
+                children = "\n".join(text),
+                className = "markdownExtended"
 
             ),
             style = {
 
                 **style,
                 "grid-row" : f"span {row}",
-                "grid-col" : f"span {col}",
-                "visibility" : "visible" if visible else "hidden",
-                **{}
-                # todo insert data
-                # todo insert background
+                "grid-column" : f"span {col}",
+                "background-image" : f"url({background})",
+                "visibility" : "visible" if visible else "hidden"
 
             }
 
@@ -49,7 +48,7 @@ class View:
 
 
     @property
-    def build(self, items):
+    def build(self):
         """  """
 
         return dmc.MantineProvider(children = dmc.Center(children = [
@@ -57,7 +56,7 @@ class View:
             html.Div(
 
                 className = "gridContainer",
-                children = [View._buildItem(i) for i in items]
+                children = [self._buildItem(**i) for i in self.items]
 
             )
 

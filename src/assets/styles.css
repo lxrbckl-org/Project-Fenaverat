@@ -26,27 +26,55 @@ html, body {
 
 
 .gridItem {
-    padding: 2px;
+    padding: 0;
     display: flex;
     font-size: 30px;
+    overflow: hidden;
+    text-align: justify;
+
     font-weight: bold;
     align-items: center;
     box-sizing: border-box;
+    background-size: cover;
     justify-content: center;
     border: var(--borderWhite);
+    background-repeat: no-repeat;
     background-color: var(--colorBlack);
 }
 
 
-.markdownCustom {
+.markdownExtended {
+    padding: 5px;
+    font-size: 15px;
+    color: var(--colorWhite);
+}
+.markdownExtended h1 {
+    font-size: 35px;
+}
+.markdownExtended h2 {
+    font-size: 30px;
+}
+.markdownExtended h3 {
+    font-size: 25px;
+}
+.markdownExtended h4 {
+    font-size: 20px;
+}
+.markdownExtended a {
 
 }
-.markdownCustom h2 {
+.markdownExtended em {
+    
+}
+.markdownExtended strong {
 
 }
-.markdownCustom h3 {
-
+.markdownExtended a:hover {
+    background-color: red;
 }
-.markdownCustom strong {
-
+.markdownExtended em:hover {
+    background-color: red;
+}
+.markdownExtended strong:hover {
+    background-color: red;
 }

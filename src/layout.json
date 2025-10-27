@@ -1,7 +1,19 @@
 {
-   "layout" : [
-      {
-         
-      }
-   ]
+  "1": {
+      "row": 1,
+      "col": 4,
+      "background" : "https://i.pinimg.com/736x/86/a0/ec/86a0eca7b0a408f44bf609f2b388a2bc.jpg"
+   },
+  "2": {
+    "row": 1,
+    "col": 2,
+    "text": [
+      "# Welcome to Fenaverat",
+      "Dynamic grid-driven Dash layout",
+      "Built from JSON structure *and here* is some bold **text**",
+      "and I think that something *like* **this** is very important as a developer",
+      "to have, because you never know what could happen!"
+    ]
+  },
+  "20": {}
 }
