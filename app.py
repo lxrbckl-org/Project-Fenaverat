@@ -1,13 +1,14 @@
 from json import loads
 
 from src.view import View
+from src.services import Services
 from src.callbacks import Callbacks
 from src.config import (app, fileLayout)
 
 
 items = loads(fileLayout.read_text()).values()
 app.layout = View(items = items).build
-Callbacks().register()
+Callbacks(Services()).register()
 server = app.server
 
 

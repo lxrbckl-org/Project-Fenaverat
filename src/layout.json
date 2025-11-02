@@ -2,18 +2,62 @@
   "1": {
       "row": 1,
       "col": 4,
+      "align" : "center",
+      "texts" : [
+        "# Ale*x* Ar*b*uc*k*le"
+      ],
       "background" : "https://i.pinimg.com/736x/86/a0/ec/86a0eca7b0a408f44bf609f2b388a2bc.jpg"
    },
   "2": {
     "row": 1,
     "col": 2,
-    "text": [
-      "## Welcome to Fenaverat 2.3",
-      "Dynamic grid-driven Dash layout",
+    "texts": [
+      "## *Welcome* to **Fenaverat 2.3**",
+      "*Dynamic* grid-driven Dash layout",
       "Built from JSON structure *and here* is some bold **text**",
-      "and I think that something *like* **this** is very important as a developer",
-      "to have, because you never know what could happen!"
+      "[here is a link](https://www.google.com)"
     ]
   },
-  "20": {}
+  "3" : {
+    "row" : 2,
+    "col" : 2,
+    "video" : "https://packaged-media.redd.it/trpitzpvmyrc1/pb/m2-res_720p.mp4?m=DASHPlaylist.mpd&v=1&e=1712034000&s=50d9261a18c06fcca04749e563daa35df77afca7#t=2.88"
+  },
+  "4" :  { "row": 1, "col": 1 },
+  "5" : {
+    "row" : 2,
+    "col" : 2,
+    "texts" : [
+      "## My Tech Stack"
+    ],
+    "badges" : [
+      "Python",
+      "JavaScript",
+      "perma",
+      "fruit",
+      "with",
+      "podcast",
+      "relationships",
+      "modern"
+    ]
+  },
+  "7211":  { "row": 1, "col": 1 },
+  "7221":  { "row": 1, "col": 1 },
+  "6":  { "row": 1, "col": 3 },
+  "7":  { "row": 1, "col": 1 },
+  "9":  { "row": 1, "col": 2 },
+  "10": { "row": 1, "col": 1 },
+  "722321":  { "row": 1, "col": 1 },
+  "71221":  { "row": 1, "col": 1 },
+  "72321":  { "row": 1, "col": 1 },
+  "11": { "row": 1, "col": 3, "visible": false },
+  "12": { "row": 2, "col": 1 },
+  "13": { "row": 1, "col": 1 },
+  "15": { "row": 1, "col": 2 },
+  "16": { "row": 1, "col": 1, "visible": false },
+  "17": { "row": 2, "col": 2 },
+  "30": { "row": 1, "col": 1 },
+  "31": { "row": 2, "col": 2 },
+  "32": { "row": 1, "col": 1 },
+  "33": { "row": 3, "col": 1 }
 }

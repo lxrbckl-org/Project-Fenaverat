@@ -1,6 +1,6 @@
-from dash import (html, dcc)
+from dash.html import (Div, Video)
 import dash_mantine_components as dmc
-import dash_bootstrap_components as dbc
+from dash.dcc import (Markdown, Interval)
 
 
 class View:
@@ -17,29 +17,46 @@ class View:
             self,
             row = 1, 
             col = 1,
-            text = [],
+            texts = [],
             style = {},
+            badges = [],
+            video = None,
             visible = True,
-            background = None
+            background = None,
+            align = "center-top"
 
         ):
         """  """
 
-        return html.Div(
+        return Div(
 
             className = "gridItem",
-            children = dcc.Markdown(
+            children = Video(
 
-                children = "\n".join(text),
-                className = "markdownExtended"
+                src = video,
+                muted = True,
+                autoPlay = False,
+                className = "videoExtended",
+                id = {"type" : "video", "index" : video}
+
+            ) if video else Markdown(
+
+                className = "markdownExtended",
+                children = [
+
+                    "\n".join(texts),
+                    " ".join(f"`{b}`" for b in badges)
+                    
+                ]
 
             ),
             style = {
 
                 **style,
-                "grid-row" : f"span {row}",
-                "grid-column" : f"span {col}",
-                "background-image" : f"url({background})",
+                "alignItems" : align,
+                "gridRow" : f"span {row}",
+                "gridColumn" : f"span {col}",
+                "backgroundImage" : f"url({background})",
                 "visibility" : "visible" if visible else "hidden"
 
             }
@@ -53,7 +70,14 @@ class View:
 
         return dmc.MantineProvider(children = dmc.Center(children = [
 
-            html.Div(
+            Interval(
+
+                n_intervals = 0,
+                id = "intervalId",
+                interval = (1000 * 60)
+
+            ),
+            Div(
 
                 className = "gridContainer",
                 children = [self._buildItem(**i) for i in self.items]

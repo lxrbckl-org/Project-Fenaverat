@@ -1,5 +1,5 @@
 :root {
-    --itemSize: 180px;
+    --itemSize: 200px;
     --colorWhite: #F7F5F1;
     --colorBlack: #181A1B;
     --borderWhite: 1px solid var(--colorWhite);
@@ -15,7 +15,6 @@ html, body {
 
 
 .gridContainer {
-    padding: 1px;
     display: grid;
     max-width: 70vw;
     grid-auto-flow: dense;
@@ -23,31 +22,40 @@ html, body {
     grid-auto-rows: var(--itemSize);
     grid-template-columns: repeat(auto-fill, minmax(var(--itemSize), 1fr));
 }
-
-
 .gridItem {
+    padding: 5px;
     display: flex;
-    font-size: 30px;
     overflow: hidden;
-    text-align: justify;
-    padding: 0 5px 0 5px;
-    font-weight: bold;
-    align-items: center-top;
     box-sizing: border-box;
     background-size: cover;
     justify-content: center;
     border: var(--borderWhite);
     background-repeat: no-repeat;
-    background-color: var(--colorBlack);
+}
+
+
+.videoExtended {
+    width: 110% !important;
+    height: 110% !important;
 }
 
 
 .markdownExtended {
     font-size: 15px;
+    text-align: justify;
+    pointer-events: none;
     color: var(--colorWhite);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .markdownExtended h1 {
-    font-size: 35px;
+    font-size: 75px;
+    font-family: reigo;
+}
+.markdownExtended h1 em {
+    font-size: 65px;
+    color: var(--colorWhite);
+    font-family: pixeloid !important;
+    background-color: transparent !important;
 }
 .markdownExtended h2 {
     font-size: 30px;
@@ -59,23 +67,28 @@ html, body {
     font-size: 20px;
 }
 .markdownExtended a {
-
-}
-.markdownExtended br {
-    
+    padding: 2px;
+    transition: color 250ms ease;
+    pointer-events: all !important;
 }
 .markdownExtended em {
-    
+    padding: 0 2px 0 2px;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+}
+.markdownExtended img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.markdownExtended code {
+    padding: 2px;
+    line-height: 25px;
+    color: var(--colorWhite);
+    border: 1px solid var(--colorWhite);
 }
 .markdownExtended strong {
-
-}
-.markdownExtended a:hover {
-    background-color: red;
-}
-.markdownExtended em:hover {
-    background-color: red;
-}
-.markdownExtended strong:hover {
-    background-color: red;
+    padding: 0 2px 0 2px;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
 }
