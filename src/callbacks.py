@@ -1,4 +1,6 @@
+from src.config import app
 from src.services import Services
+
 from dash.dependencies import (Input, Output, State, ALL)
 
 
@@ -14,7 +16,7 @@ class Callbacks:
     def register(self):
         """  """
 
-        pass
+        self.nIntervalsCallback()
 
 
     def nIntervalsCallback(self):
@@ -22,7 +24,9 @@ class Callbacks:
 
         @app.callback(
 
-
+            inputs = Input("intervalId", "n_intervals"),
+            state = State({"type": "video", "index": ALL}, "autoPlay"),
+            output = Output({"type": "video", "index": ALL}, "autoPlay")
 
         )
-        def func(*args): self.services.nIntervalService(*args)
+        def func(*args): return self.services.nIntervalService(*args[1:])

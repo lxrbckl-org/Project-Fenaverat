@@ -48,10 +48,12 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .markdownExtended h1 {
+    line-height: 0;
     font-size: 75px;
     font-family: reigo;
 }
 .markdownExtended h1 em {
+    line-height: 0;
     font-size: 65px;
     color: var(--colorWhite);
     font-family: pixeloid !important;

@@ -10,7 +10,9 @@ class Services:
         pass
 
 
-    def nIntervalService(videos):
+    def nIntervalService(self, sAutoplay):
         """  """
 
-        pass
+        print('sAutoplay', sAutoplay)
+
+        return sAutoplay
