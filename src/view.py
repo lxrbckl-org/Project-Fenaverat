@@ -17,9 +17,8 @@ class View:
             self,
             row = 1, 
             col = 1,
-            texts = [],
             style = {},
-            badges = [],
+            corpus = [],
             video = None,
             visible = True,
             background = None,
@@ -34,6 +33,7 @@ class View:
             children = Video(
 
                 src = video,
+                loop = False,
                 muted = True,
                 autoPlay = False,
                 className = "videoExtended",
@@ -42,12 +42,16 @@ class View:
             ) if video else Markdown(
 
                 className = "markdownExtended",
-                children = [
-
-                    "\n".join(texts),
-                    " ".join(f"`{b}`" for b in badges)
+                children = "\n".join([
                     
-                ]
+                    {
+
+                        str: c,
+                        list: " ".join(f"`{b}`" for b in c) + "\n"
+
+                    }[type(c)]
+
+                for c in corpus])
 
             ),
             style = {

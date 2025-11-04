@@ -13,6 +13,4 @@ class Services:
     def nIntervalService(self, sAutoplay):
         """  """
 
-        print('sAutoplay', sAutoplay)
-
         return sAutoplay

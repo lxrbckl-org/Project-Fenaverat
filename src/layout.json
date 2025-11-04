@@ -3,19 +3,16 @@
       "row": 1,
       "col": 4,
       "align" : "center",
-      "texts" : [
-        "# Ale*x* Ar*b*uc*k*le"
+      "corpus" : [
+
       ],
       "background" : "https://i.pinimg.com/736x/86/a0/ec/86a0eca7b0a408f44bf609f2b388a2bc.jpg"
    },
   "2": {
     "row": 1,
     "col": 2,
-    "texts": [
-      "## *Welcome* to **Fenaverat 2.3**",
-      "*Dynamic* grid-driven Dash layout",
-      "Built from JSON structure *and here* is some bold **text**",
-      "[here is a link](https://www.google.com)"
+    "corpus" : [
+
     ]
   },
   "3" : {
@@ -27,19 +24,14 @@
   "5" : {
     "row" : 2,
     "col" : 2,
-    "texts" : [
-      "## My Tech Stack"
+    "corpus" : [
+      "## My Tech Stack",
+      ["Python", "Uber", "Demo"],
+      "Everything left behind."
     ],
-    "badges" : [
-      "Python",
-      "JavaScript",
-      "perma",
-      "fruit",
-      "with",
-      "podcast",
-      "relationships",
-      "modern"
-    ]
+    "style" : {
+      "justifyContent" : "left"
+    }
   },
   "7211":  { "row": 1, "col": 1 },
   "7221":  { "row": 1, "col": 1 },
