@@ -35,7 +35,6 @@ class View:
                 src = video,
                 loop = False,
                 muted = True,
-                autoPlay = False,
                 className = "videoExtended",
                 id = {"type" : "video", "index" : video}
 

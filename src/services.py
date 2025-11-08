@@ -10,7 +10,4 @@ class Services:
         pass
 
 
-    def nIntervalService(self, sAutoplay):
-        """  """
-
-        return sAutoplay
+    def nIntervalService(self, sAutoplay): return [choice([True, False]) for a in sAutoplay]

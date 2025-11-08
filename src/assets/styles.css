@@ -23,7 +23,6 @@ html, body {
     grid-template-columns: repeat(auto-fill, minmax(var(--itemSize), 1fr));
 }
 .gridItem {
-    padding: 5px;
     display: flex;
     overflow: hidden;
     box-sizing: border-box;
@@ -36,26 +35,27 @@ html, body {
 
 .videoExtended {
     width: 110% !important;
-    height: 110% !important;
+    height: 100% !important;
 }
 
 
 .markdownExtended {
     font-size: 15px;
+    padding: 5px;
     text-align: justify;
     pointer-events: none;
     color: var(--colorWhite);
     font-family: Arial, Helvetica, sans-serif;
 }
 .markdownExtended h1 {
-    line-height: 0;
+    margin-bottom: -5px;
     font-size: 75px;
     font-family: reigo;
 }
 .markdownExtended h1 em {
-    line-height: 0;
     font-size: 65px;
     color: var(--colorWhite);
+    font-style: normal;
     font-family: pixeloid !important;
     background-color: transparent !important;
 }
