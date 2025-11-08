@@ -6,8 +6,8 @@
       "corpus" : [
         "# l*x*rbc*k*l"
       ],
-      "background" : "https://i.pinimg.com/736x/86/a0/ec/86a0eca7b0a408f44bf609f2b388a2bc.jpg"
-   },
+      "background" : "https://chatgpt.com/backend-api/estuary/content?id=file_00000000fe1072309600a165a14dab85&ts=489622&p=fs&cid=1&sig=4e9ffb9383d131767a33ec47f8f2f4ef34061c2fccfed33b348a79b0a15e3f52&v=0"
+    },
   "2": {
     "row": 1,
     "col": 2,
@@ -25,8 +25,12 @@
     "row" : 2,
     "col" : 2,
     "corpus" : [
-      "## My Tech Stack",
-      ["Python", "Uber", "Demo"],
+      "## My Tech Stack here is some more text",
+      [
+        "[`Python`](https://google.com)", 
+        "`Uber`", 
+        "`Demo`"
+      ],
       "Everything left behind."
     ],
     "style" : {

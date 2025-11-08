@@ -46,7 +46,7 @@ class View:
                     {
 
                         str: c,
-                        list: " ".join(f"`{b}`" for b in c) + "\n"
+                        list: " ".join(c) + "\n"
 
                     }[type(c)]
 
