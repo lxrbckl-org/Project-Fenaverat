@@ -6,7 +6,7 @@
       "corpus" : [
         "# l*x*rbc*k*l"
       ],
-      "background" : "https://chatgpt.com/backend-api/estuary/content?id=file_00000000fe1072309600a165a14dab85&ts=489622&p=fs&cid=1&sig=4e9ffb9383d131767a33ec47f8f2f4ef34061c2fccfed33b348a79b0a15e3f52&v=0"
+      "background" : "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
     },
   "2": {
     "row": 1,
@@ -25,7 +25,7 @@
     "row" : 2,
     "col" : 2,
     "corpus" : [
-      "## My Tech Stack here is some more text",
+      "## My Tech *Stack* here is some more text",
       [
         "[`Python`](https://google.com)", 
         "`Uber`", 
@@ -35,12 +35,13 @@
     ],
     "style" : {
       "justifyContent" : "left"
-    }
+    },
+    "background" : "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
   },
   "7211":  { "row": 1, "col": 1 },
   "7221":  { "row": 1, "col": 1 },
   "6":  { "row": 1, "col": 3 },
-  "7":  { "row": 1, "col": 1 },
+  "7":  { "row": 1, "col": 1, "background" : "https://i.postimg.cc/52RHKLnG/Chat-GPT-Image-Sep-14-2025-at-12-03-13-AM.png" },
   "9":  { "row": 1, "col": 2 },
   "10": { "row": 1, "col": 1 },
   "722321":  { "row": 1, "col": 1 },

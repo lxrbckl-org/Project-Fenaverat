@@ -40,7 +40,7 @@ class View:
 
             ) if video else Markdown(
 
-                className = "markdownExtended",
+                className = "markdownExtended" if corpus else None,
                 children = "\n".join([
                     
                     {

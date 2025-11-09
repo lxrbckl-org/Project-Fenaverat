@@ -34,7 +34,7 @@ html, body {
 
 
 .videoExtended {
-    width: 115% !important;
+    width: 110% !important;
     height: 100% !important;
 }
 
@@ -46,11 +46,13 @@ html, body {
     pointer-events: none;
     font-family: sans-serif;
     color: var(--colorWhite);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .markdownExtended h1 {
     font-size: 85px;
-    font-family: reigo;
-    margin-bottom: -12px;
+    vertical-align: middle;
+    font-family: sans-serif;
 }
 .markdownExtended h1 em {
     font-size: 75px;
