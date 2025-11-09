@@ -14,8 +14,9 @@
     "row": 1,
     "col": 2,
     "corpus" : [
-
-    ]
+      "This is a test"
+    ],
+    "background" : "https://immich.lxrbckl.com/s/my-server"
   },
   "3" : {
     "row" : 2,
@@ -35,15 +36,12 @@
       ],
       "Everything left behind."
     ],
-    "style" : {
-      "justifyContent" : "left"
-    },
+    "justify" : "left",
     "background" : "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
   },
   "7211":  { "row": 1, "col": 1, "visible" : false },
   "7221":  { "row": 1, "col": 1 },
   "6":  { "row": 1, "col": 3 },
-  "9":  { "row": 1, "col": 2 },
   "10": { "row": 1, "col": 1 },
   "722321":  { "row": 1, "col": 1 },
   "71221":  { "row": 1, "col": 1 },
@@ -58,8 +56,11 @@
     "col" : 2,
     "video" : "https://packaged-media.redd.it/trpitzpvmyrc1/pb/m2-res_720p.mp4?m=DASHPlaylist.mpd&v=1&e=1712034000&s=50d9261a18c06fcca04749e563daa35df77afca7#t=2.88"
   },
-  "31": { "row": 2, "col": 2 },
+  "31": { "row": 2, "col": 2, "background" : "https://immich.lxrbckl.com/api/assets/b254eb42-3ee4-4c72-9eda-be4860aea993/thumbnail?slug=my-server&size=preview&c=kvcFBAAwx%2BrbiLuENZn6sZs%2FqQ%3D%3D" },
   "32": { "row": 1, "col": 1 },
-  "33": { "row": 3, "col": 1 },
-  "134" : {"row" : 1, "col" : 4}
+  "33": { "row": 3, "col": 1, "background" : "https://immich.lxrbckl.com/api/assets/b254eb42-3ee4-4c72-9eda-be4860aea993/thumbnail?slug=my-server&size=preview&c=kvcFBAAwx%2BrbiLuENZn6sZs%2FqQ%3D%3D" },
+  "323232": { "row": 1, "col": 1 },
+  "33242": { "row": 1, "col": 1 },
+  "34322": { "row": 1, "col": 1 }
+
 }

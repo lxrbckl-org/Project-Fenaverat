@@ -22,6 +22,7 @@ class View:
             video = None,
             header = False,
             visible = True,
+            justify = None,
             background = None,
             align = "center-top"
 
@@ -54,6 +55,7 @@ class View:
                 for c in corpus]),
                 style = {
 
+                    "justifyContent" : justify,
                     "width" : "auto" if header else "100%"
 
                 }
