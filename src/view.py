@@ -20,6 +20,7 @@ class View:
             style = {},
             corpus = [],
             video = None,
+            header = False,
             visible = True,
             background = None,
             align = "center-top"
@@ -50,7 +51,12 @@ class View:
 
                     }[type(c)]
 
-                for c in corpus])
+                for c in corpus]),
+                style = {
+
+                    "width" : "auto" if header else "100%"
+
+                }
 
             ),
             style = {

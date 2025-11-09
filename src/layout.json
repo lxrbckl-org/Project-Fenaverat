@@ -1,7 +1,9 @@
 {
+  "7":  { "row": 1, "col": 1, "background" : "https://i.postimg.cc/52RHKLnG/Chat-GPT-Image-Sep-14-2025-at-12-03-13-AM.png" },
   "1": {
       "row": 1,
       "col": 4,
+      "header" : true,
       "align" : "center",
       "corpus" : [
         "# l*x*rbc*k*l"
@@ -20,10 +22,10 @@
     "col" : 2,
     "video" : "https://www.w3schools.com/html/mov_bbb.mp4"
   },
-  "4" :  { "row": 1, "col": 1 },
+  "4" :  { "row": 1, "col": 1, "visible" : false },
   "5" : {
     "row" : 2,
-    "col" : 2,
+    "col" : 3,
     "corpus" : [
       "## My Tech *Stack* here is some more text",
       [
@@ -38,10 +40,9 @@
     },
     "background" : "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
   },
-  "7211":  { "row": 1, "col": 1 },
+  "7211":  { "row": 1, "col": 1, "visible" : false },
   "7221":  { "row": 1, "col": 1 },
   "6":  { "row": 1, "col": 3 },
-  "7":  { "row": 1, "col": 1, "background" : "https://i.postimg.cc/52RHKLnG/Chat-GPT-Image-Sep-14-2025-at-12-03-13-AM.png" },
   "9":  { "row": 1, "col": 2 },
   "10": { "row": 1, "col": 1 },
   "722321":  { "row": 1, "col": 1 },
@@ -59,5 +60,6 @@
   },
   "31": { "row": 2, "col": 2 },
   "32": { "row": 1, "col": 1 },
-  "33": { "row": 3, "col": 1 }
+  "33": { "row": 3, "col": 1 },
+  "134" : {"row" : 1, "col" : 4}
 }
